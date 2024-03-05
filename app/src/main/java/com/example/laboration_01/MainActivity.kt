@@ -14,9 +14,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val btnSignIn = binding.btnSignIn
+        val btnAbout = binding.btnAbout
 
         btnSignIn.setOnClickListener {
             val myIntent = Intent(this, SignInActivity::class.java)
+            startActivity(myIntent)
+        }
+
+        btnAbout.setOnClickListener {
+            val myIntent = Intent(this, AboutActivity::class.java)
             startActivity(myIntent)
         }
 
