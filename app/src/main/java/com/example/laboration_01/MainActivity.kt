@@ -1,5 +1,6 @@
 package com.example.laboration_01
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.laboration_01.databinding.ActivityMainBinding
@@ -11,6 +12,13 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val btnSignIn = binding.btnSignIn
+
+        btnSignIn.setOnClickListener {
+            val myIntent = Intent(this, SignInActivity::class.java)
+            startActivity(myIntent)
+        }
 
     }
 }

@@ -13,5 +13,9 @@ class LoggedInActivity : AppCompatActivity() {
         binding = ActivityLoggedInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val tvLoggedInWelcome = binding.tvLoggedInWelcome
+
+        tvLoggedInWelcome.text = intent.getStringExtra("welcome")
+
     }
 }
