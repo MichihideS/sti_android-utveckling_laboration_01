@@ -5,66 +5,101 @@
     android:id="@+id/tv_main_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1C3A6C"
     tools:context=".SignInActivity">
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
         android:ems="10"
+        android:hint="@string/app_enter_username"
         android:inputType="text"
+        android:minWidth="220sp"
         android:minHeight="48dp"
-        android:text="@string/app_username"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_enter_username"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo_pompom"
+        app:layout_constraintVertical_bias="0.39" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_enter_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#132E5B"
+        android:padding="15sp"
         android:text="@string/app_sign_in"
+        android:textColor="#CAD9F1"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_sign_in_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#0F1E37"
+        android:minWidth="240sp"
         android:text="@string/app_btn_sign_in_login"
+        android:textColor="#CAD9F1"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_username"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#0F1E37"
+        android:minWidth="240sp"
         android:text="@string/app_btn_back"
+        android:textColor="#CAD9F1"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_register"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#0F1E37"
+        android:minWidth="240sp"
         android:text="@string/app_btn_register"
+        android:textColor="#CAD9F1"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_username" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_logo_pompom"
+        android:layout_width="340dp"
+        android:layout_height="309dp"
+        android:contentDescription="@string/app_iv_pom_pom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/pom_pom_sticker_18" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

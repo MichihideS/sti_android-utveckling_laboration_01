@@ -5,30 +5,35 @@
     android:id="@+id/tv_main_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1C3A6C"
     tools:context=".AboutActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#0F1E37"
+        android:minWidth="240sp"
+        android:textColor="#CAD9F1"
+        android:textSize="20sp"
         android:text="@string/app_btn_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
+        app:layout_constraintVertical_bias="0.95" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView"
         android:layout_width="385dp"
         android:layout_height="338dp"
+        android:contentDescription="@string/app_iv_main_logo"
         app:layout_constraintBottom_toTopOf="@+id/btn_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055"
-        app:srcCompat="@drawable/honkai_star_rail"
-        android:contentDescription="@string/app_iv_main_logo" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/honkai_star_rail" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_about_text"
@@ -36,9 +41,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:background="#132E5B"
+        android:padding="15sp"
         android:text="@string/app_about_text"
+        android:textColor="#CAD9F1"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

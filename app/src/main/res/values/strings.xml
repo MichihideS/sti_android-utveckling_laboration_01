@@ -5,12 +5,16 @@
     <string name="app_sign_in">Please sign in</string>
     <string name="app_logged_in_welcome">Logged in</string>
     <string name="app_choose_username">Please choose a username</string>
+    <string name="app_enter_username">Enter your username</string>
     <string name="app_about_text">
-        Honkai star rail is a kasdksadkasdkasdk k asdkaskdsa dkasdk asdk sadkas kdasdk askd aslk
-        dkadksadkdaskdaskd akd k aksdk adkas dkas kdas ksakdsakdsadk asdsak aks
-        sdkasdkasd kdk k k askdksadksa dkasdk
+        Honkai star rail is a turn-based role-playing game that is published by the incredibly
+        popular chinese company called miHoYo. It has a typical gacha monetization system in which
+        players can obtain characters and weapons for a form of currency which can be obtained
+        freely in the game but also purchased for real money for the people that enjoy doing that.
+        The game itself is very sci-fi themed in which you go around and do different missions in
+        different regions trying your best to calm the war in universe travelling through the
+        vast space.
     </string>
-    <string name="app_username"></string>
     <string name="app_btn_sign_in">Sign in</string>
     <string name="app_btn_sign_in_login">Log in</string>
     <string name="app_btn_ok">OK</string>
@@ -18,4 +22,6 @@
     <string name="app_btn_register">Register new user</string>
     <string name="app_btn_about">About Star Rail</string>
     <string name="app_iv_main_logo">star rail</string>
+    <string name="app_iv_pom_pom">pompom</string>
+    <string name="app_iv_pom_pom_02">pompom_02</string>
 </resources>
