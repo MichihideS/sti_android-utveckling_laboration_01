@@ -16,11 +16,13 @@ class MainActivity : AppCompatActivity() {
         val btnSignIn = binding.btnSignIn
         val btnAbout = binding.btnAbout
 
+        // Button that takes you to the sign in activity
         btnSignIn.setOnClickListener {
             val myIntent = Intent(this, SignInActivity::class.java)
             startActivity(myIntent)
         }
 
+        // Button that takes you to the about activity
         btnAbout.setOnClickListener {
             val myIntent = Intent(this, AboutActivity::class.java)
             startActivity(myIntent)

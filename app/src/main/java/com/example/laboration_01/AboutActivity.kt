@@ -18,7 +18,7 @@ class AboutActivity : AppCompatActivity() {
 
         // Button that returns user to main activity
         btnBack.setOnClickListener {
-            val myIntent = Intent(this, SignInActivity::class.java)
+            val myIntent = Intent(this, MainActivity::class.java)
             startActivity(myIntent)
         }
     }

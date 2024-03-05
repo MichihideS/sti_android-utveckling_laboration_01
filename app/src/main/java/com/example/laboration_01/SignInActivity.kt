@@ -17,10 +17,11 @@ class SignInActivity : AppCompatActivity() {
 
         val btnLogIn = binding.btnSignInLogin
         val btnRegister = binding.btnRegister
+        val btnBack = binding.btnBack
         val importArray = intent.getStringArrayListExtra("array")
         val builder = AlertDialog.Builder(this)
 
-        // Button that navigates you to LoggedInActivity if the input text matches the arraylist
+        // Button that navigates you to logged in activity if the input text matches the arraylist
         btnLogIn.setOnClickListener {
             val username = binding.etUsername.text.toString()
 
@@ -67,6 +68,12 @@ class SignInActivity : AppCompatActivity() {
         btnRegister.setOnClickListener {
                 val myIntent = Intent(this, RegisterActivity::class.java)
                 startActivity(myIntent)
+        }
+
+        // Button that takes you back to the main activity
+        btnBack.setOnClickListener {
+            val myIntent = Intent(this, MainActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }

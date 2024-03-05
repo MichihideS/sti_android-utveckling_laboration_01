@@ -15,6 +15,7 @@ class LoggedInActivity : AppCompatActivity() {
 
         val tvLoggedInWelcome = binding.tvLoggedInWelcome
 
+        // Welcomes the user with the username used to log in
         tvLoggedInWelcome.text = intent.getStringExtra("welcome")
 
     }

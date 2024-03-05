@@ -32,7 +32,7 @@ class RegisterActivity : AppCompatActivity() {
                 }
             }
 
-            // If uses exists gets error message
+            // If user exists gets error message
             if (checkName) {
                 builder.setMessage("$registerName is already registered!")
                 builder.setTitle("Error!")
@@ -51,7 +51,7 @@ class RegisterActivity : AppCompatActivity() {
             // If none above, the user is created
             } else {
                 registeredUsers.add(registerName)
-                builder.setMessage("$registerName has been registered!")
+                builder.setMessage("$registerName has been registered! Press back to continue login")
                 builder.setTitle("Success!")
                 builder.setCancelable(true)
                 builder.setPositiveButton("Ok"){ dialog, _ -> dialog.cancel()}
