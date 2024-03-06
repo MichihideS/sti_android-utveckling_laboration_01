@@ -15,6 +15,7 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Components
         val btnRegister = binding.btnSignInLogin
         val btnBack = binding.btnBack
         val registeredUsers: ArrayList<String> = ArrayList()
@@ -51,7 +52,8 @@ class RegisterActivity : AppCompatActivity() {
             // If none above, the user is created
             } else {
                 registeredUsers.add(registerName)
-                builder.setMessage("$registerName has been registered! Press back to continue login")
+                builder.setMessage("$registerName has been registered! Press Back to continue " +
+                        "to login")
                 builder.setTitle("Success!")
                 builder.setCancelable(true)
                 builder.setPositiveButton("Ok"){ dialog, _ -> dialog.cancel()}

@@ -1,6 +1,8 @@
 package com.example.laboration_01
 
 class Gacha {
+    /* Function that randoms 10 numbers between 1-1000 and then depending on the number assigns
+    ** it to a variable and returns it as a string */
     fun randomNumber(): String {
         var threeStar = 0
         var fourStar = 0

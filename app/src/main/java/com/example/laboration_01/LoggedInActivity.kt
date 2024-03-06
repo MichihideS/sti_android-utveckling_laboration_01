@@ -16,6 +16,7 @@ class LoggedInActivity : AppCompatActivity() {
         binding = ActivityLoggedInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Components
         val tvLoggedInWelcome = binding.tvLoggedInWelcome
         val tvGachaResults = binding.tvGachaResults
         val btnDraw = binding.btnDraw
@@ -25,11 +26,13 @@ class LoggedInActivity : AppCompatActivity() {
         // Welcomes the user with the username used to log in
         tvLoggedInWelcome.text = intent.getStringExtra("welcome")
 
+        // Button that calls the gacha function from Gacha class and turns the textview visible
         btnDraw.setOnClickListener {
             tvGachaResults.text = gacha.randomNumber()
             tvGachaResults.visibility = View.VISIBLE
         }
 
+        // Button that returns the user to the main activity
         btnLogout.setOnClickListener {
             val myIntent = Intent(this, MainActivity::class.java)
             startActivity(myIntent)

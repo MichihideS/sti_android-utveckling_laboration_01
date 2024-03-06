@@ -14,6 +14,7 @@ class AboutActivity : AppCompatActivity() {
         binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Component
         val btnBack = binding.btnBack
 
         // Button that returns user to main activity

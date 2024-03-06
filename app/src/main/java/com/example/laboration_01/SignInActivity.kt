@@ -15,6 +15,7 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Components
         val btnLogIn = binding.btnSignInLogin
         val btnRegister = binding.btnRegister
         val btnBack = binding.btnBack
@@ -25,8 +26,8 @@ class SignInActivity : AppCompatActivity() {
         btnLogIn.setOnClickListener {
             val username = binding.etUsername.text.toString()
 
-            // Loops and checks if the input matches any string in the arraylist and checks
-            // if the list is empty or if you enter an empty string
+            /* Loops and checks if the input matches any string in the arraylist and checks
+            ** if the list is empty or if you enter an empty string */
             if (importArray != null) {
                 for (item in importArray)
                     when (username) {

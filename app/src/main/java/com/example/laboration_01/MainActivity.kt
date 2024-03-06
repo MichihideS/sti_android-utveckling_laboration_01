@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Components
         val btnSignIn = binding.btnSignIn
         val btnAbout = binding.btnAbout
 
@@ -27,6 +28,5 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, AboutActivity::class.java)
             startActivity(myIntent)
         }
-
     }
 }
