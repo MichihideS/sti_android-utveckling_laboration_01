@@ -1,5 +1,6 @@
 package com.example.laboration_01
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,7 @@ class LoggedInActivity : AppCompatActivity() {
         val tvLoggedInWelcome = binding.tvLoggedInWelcome
         val tvGachaResults = binding.tvGachaResults
         val btnDraw = binding.btnDraw
+        val btnLogout = binding.btnLogout
         val gacha = Gacha()
 
         // Welcomes the user with the username used to log in
@@ -26,6 +28,11 @@ class LoggedInActivity : AppCompatActivity() {
         btnDraw.setOnClickListener {
             tvGachaResults.text = gacha.randomNumber()
             tvGachaResults.visibility = View.VISIBLE
+        }
+
+        btnLogout.setOnClickListener {
+            val myIntent = Intent(this, MainActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }

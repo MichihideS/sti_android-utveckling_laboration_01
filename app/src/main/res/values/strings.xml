@@ -29,6 +29,7 @@
     <string name="app_btn_register">Register new user</string>
     <string name="app_btn_about">About Star Rail</string>
     <string name="app_btn_draw">DRAW</string>
+    <string name="app_btn_logout">Logout</string>
     <string name="app_iv_main_logo">star rail</string>
     <string name="app_iv_pom_pom">pompom</string>
     <string name="app_iv_pom_pom_02">pompom_02</string>
