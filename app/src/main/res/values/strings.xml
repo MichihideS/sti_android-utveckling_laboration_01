@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">laboration_01</string>
+    <string name="app_welcome_message">Welcome Traveller</string>
     <string name="app_sign_in">Please sign in</string>
     <string name="app_logged_in_welcome">Logged in</string>
     <string name="app_choose_username">Please choose a username</string>

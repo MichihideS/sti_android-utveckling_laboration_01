@@ -17,7 +17,7 @@ class Gacha {
             }
         }
 
-        return("Here are your draw results!\nNumber of 3* pulls: $threeStar\nNumber of 4* pulls:" +
-                " $fourStar\nNumber of 5* pulls: $fiveStar\nBetter luck next time!")
+        return("Here are your draw results!\n\nNumber of 3* pulls: $threeStar\nNumber of 4* pulls:" +
+                " $fourStar\nNumber of 5* pulls: $fiveStar\n\nBetter luck next time!")
     }
 }
