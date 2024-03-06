@@ -4,6 +4,7 @@
     <string name="app_logged_in_welcome">Logged in</string>
     <string name="app_choose_username">Please choose a username</string>
     <string name="app_enter_username">Enter your username</string>
+    <string name="app_gacha_result">GACHA RESULTS</string>
     <string name="app_about_text">
         Honkai star rail is a turn-based role-playing game that is published by the incredibly
         popular chinese company called miHoYo. It has a typical gacha monetization system in which
@@ -13,12 +14,21 @@
         different regions trying your best to calm the war in universe travelling through the
         vast space.
     </string>
+    <string name="app_logged_in_text">
+        Here you can try your luck at the so called gacha system! Basically you simulate a
+        10 draw which means you draw from the pool of available items 10 times. The rates are as
+        abysmal as they are in the real game so there is a 0.6% chance of drawing a 5* and a 5.1%
+        chance of drawing a 4* and a massive 94.3% chance of drawing a 3*. The stars are more or
+        less just showing how good something is, 5* being super good and 3* being really not
+        useful. Good luck!
+    </string>
     <string name="app_btn_sign_in">Sign in</string>
     <string name="app_btn_sign_in_login">Log in</string>
     <string name="app_btn_ok">OK</string>
     <string name="app_btn_back">Back</string>
     <string name="app_btn_register">Register new user</string>
     <string name="app_btn_about">About Star Rail</string>
+    <string name="app_btn_draw">DRAW</string>
     <string name="app_iv_main_logo">star rail</string>
     <string name="app_iv_pom_pom">pompom</string>
     <string name="app_iv_pom_pom_02">pompom_02</string>

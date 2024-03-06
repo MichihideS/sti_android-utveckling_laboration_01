@@ -22,4 +22,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.100000024" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_logged_in_text"
+        android:layout_width="366dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#132E5B"
+        android:padding="15sp"
+        android:text="@string/app_logged_in_text"
+        android:textColor="#CAD9F1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logged_in_welcome"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0F1E37"
+        android:minWidth="240sp"
+        android:text="@string/app_btn_draw"
+        android:textColor="#CAD9F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logged_in_text"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_gacha_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#132E5B"
+        android:padding="15sp"
+        android:text="@string/app_gacha_result"
+        android:textColor="#CAD9F1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_draw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logged_in_text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
